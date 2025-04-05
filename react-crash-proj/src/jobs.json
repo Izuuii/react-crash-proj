@@ -1,4 +1,5 @@
-  [
+{
+  "jobs": [
     {
       "id": "1",
       "title": "Senior React Developer",
@@ -35,8 +36,6 @@
       "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
       "salary": "$70K - $80K",
       "company": {
-        "name": "Dolor Cloud",
-        "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
         "contactEmail": "contact@dolorsitamet.com",
         "contactPhone": "555-555-5555"
       }
@@ -82,5 +81,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "44d2",
+      "title": "TEST",
+      "type": "Full-time",
+      "location": "asdas",
+      "description": "asdasd",
+      "salary": "Under $50K",
+      "company": {
+        "name": "dasd",
+        "description": "asdasd",
+        "contactEmail": "dasd@gmail.com",
+        "contactPhone": ""
+      }
     }
   ]
+}
