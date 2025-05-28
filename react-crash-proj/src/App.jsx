@@ -15,11 +15,11 @@ import EditJobPage from './pages/EditJobPage'
 function App() {
   const addJob = async (newJob) => {
     const res = await fetch('/api/jobs', {
-      method: 'POST',
+      method: 'POST', //Send data
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json', //used to tell the server that the data we're sending is in JSON format. 
       },
-      body: JSON.stringify(newJob),
+      body: JSON.stringify(newJob), //This is the data being sent in the request.
     });
     return;
   };
@@ -35,7 +35,7 @@ function App() {
   // Update Job
   const updateJob = async (job) => {
     const res = await fetch(`/api/jobs/${job.id}`, {
-      method: 'PUT',
+      method: 'PUT', //Update an existing resource on the server.
       headers: {
         'Content-Type': 'application/json',
       },
@@ -53,7 +53,6 @@ function App() {
         <Route path='/edit-job/:id' element={<EditJobPage updateJobSubmit={updateJob}/>} loader={jobLoader} />
         <Route path='/add-job' element={<AddJobPage addJobSubmit={addJob} />} />
         <Route path='*' element={<NotFoundPage/>} />
-
       </Route>
       )
     )  
